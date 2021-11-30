@@ -31,7 +31,7 @@ let finalArray = result.sort((a,b)=>a-b)
 
 for (let time of result){
 
-  setTimeout(() => {console.log("test")}, (parseInt(time)*1000));
+  setTimeout(() => {console.log("test"); process.stdout.write('\x07');}, (parseInt(time)*1000));
 }
 
 
